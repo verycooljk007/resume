@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-black text-green-400 font-mono">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>verycooljk007 | Bloomberg-style GitHub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        terminal: {
+                            primary: '#F66A0A',
+                            secondary: '#0d1117',
+                            text: '#39FF14',
+                            bg: '#000000'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-terminal-bg text-terminal-text min-h-screen p-4">
+    <div class="container mx-auto max-w-6xl">
+        <!-- Header Terminal -->
+        <div class="border-b border-terminal-primary mb-6 pb-2">
+            <div class="flex justify-between items-center">
+                <div class="text-terminal-primary font-bold text-xl">
+                    <span class="blink">_</span> BLOOMBERG TERMINAL <span class="text-terminal-text">v3.7.42</span>
+                </div>
+                <div class="text-sm">
+                    <span class="text-terminal-primary">USER:</span> verycooljk007 <span class="text-terminal-primary">|</span> 
+                    <span class="text-terminal-primary">STATUS:</span> ACTIVE <span class="text-terminal-primary">|</span> 
+                    <span id="datetime" class="text-terminal-primary"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Left Column -->
+            <div class="space-y-6">
+                <!-- User Profile -->
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <span class="text-terminal-primary">👤 > SYSTEM_BIO</span>
+                    </div>
+                    <div class="terminal-body">
+                        <p class="mb-2"><code class="text-terminal-primary">>> Quant Analyst | Cybersecurity | Python</code></p>
+                        <p class="mb-1"><span class="text-terminal-primary">>> ⚡ STATUS:</span> Building algorithmic trading strategies and financial analysis tools.</p>
+                        <p><span class="text-terminal-primary">>> 🏢 CURRENT_ORG:</span> Founder of Castlemore Road Strategies.</p>
+                        <p class="mt-4"><span class="text-terminal-primary">>> 🎓 EDUCATION:</span> Athabasca University</p>
+                    </div>
+                </div>
+
+                <!-- Tech Stack -->
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <span class="text-terminal-primary">💻 > TECH_STACK</span>
+                    </div>
+                    <div class="terminal-body grid grid-cols-2 gap-2">
+                        <span class="bg-terminal-secondary px-2 py-1 rounded text-center">PINE SCRIPT</span>
+                        <span class="bg-terminal-secondary px-2 py-1 rounded text-center">PYTHON</span>
+                        <span class="bg-terminal-secondary px-2 py-1 rounded text-center">PANDAS</span>
+                        <span class="bg-terminal-secondary px-2 py-1 rounded text-center">GIT</span>
+                        <span class="bg-terminal-secondary px-2 py-1 rounded text-center">NUMPY</span>
+                        <span class="bg-terminal-secondary px-2 py-1 rounded text-center">MATPLOTLIB</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="space-y-6">
+                <!-- GitHub Stats -->
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <span class="text-terminal-primary">📊 > DATA_FEED</span>
+                    </div>
+                    <div class="terminal-body">
+                        <img src="https://github-readme-stats.vercel.app/api?username=verycooljk007&show_icons=true&bg_color=0d1117&title_color=f66a0a&text_color=39FF14&icon_color=f66a0a&hide_border=true" alt="Stats" class="w-full" />
+                        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=verycooljk007&layout=compact&bg_color=0d1117&title_color=f66a0a&text_color=39FF14&hide_border=true" alt="Languages" class="w-full mt-4" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Activity Graph -->
+        <div class="terminal-window mt-6">
+            <div class="terminal-header">
+                <span class="text-terminal-primary">📉 > MARKET_ACTIVITY</span>
+            </div>
+            <div class="terminal-body">
+                <img src="https://github-readme-activity-graph.vercel.app/graph?username=verycooljk007&bg_color=0d1117&color=f66a0a&line=39FF14&point=ffffff&area=true&hide_border=true" class="w-full" />
+            </div>
+        </div>
+
+        <!-- Contact Links -->
+        <div class="terminal-window mt-6">
+            <div class="terminal-header">
+                <span class="text-terminal-primary">📡 > TRANSMISSION_LINKS</span>
+            </div>
+            <div class="terminal-body flex justify-center space-x-4">
+                <a href="https://www.linkedin.com/in/meshaalkhan/" class="bg-terminal-secondary px-4 py-2 rounded hover:bg-terminal-primary hover:text-black transition-colors">
+                    <i data-feather="linkedin" class="inline mr-2"></i> LINKEDIN
+                </a>
+                <a href="mailto:mkhan2@learn.athabascau.ca" class="bg-terminal-secondary px-4 py-2 rounded hover:bg-terminal-primary hover:text-black transition-colors">
+                    <i data-feather="mail" class="inline mr-2"></i> EMAIL
+                </a>
+            </div>
+        </div>
+
+        <!-- Terminal Footer -->
+        <div class="text-xs text-terminal-primary mt-6 text-center">
+            <p>BLOOMBERG TERMINAL EMULATION v3.7.42 | DATA DELAYED BY 0.00042 SECONDS | © 2023 CASTLEMORE ROAD STRATEGIES</p>
+        </div>
+    </div>
+
+    <script>
+        feather.replace();
+        
+        // Update datetime
+        function updateDateTime() {
+            const now = new Date();
+            const datetime = document.getElementById('datetime');
+            datetime.textContent = now.toLocaleString('en-US', {
+                month: 'short',
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit',
+                hour12: true
+            }).toUpperCase();
+        }
+        
+        setInterval(updateDateTime, 1000);
+        updateDateTime();
+    </script>
+</body>
+</html>

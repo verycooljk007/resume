@@ -1,0 +1,69 @@
+/* Terminal styling */
+.terminal-window {
+    border: 1px solid #F66A0A;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.terminal-header {
+    background-color: #0d1117;
+    padding: 8px 12px;
+    border-bottom: 1px solid #F66A0A;
+    font-weight: bold;
+}
+
+.terminal-body {
+    padding: 12px;
+    background-color: rgba(13, 17, 23, 0.5);
+}
+
+/* Blinking cursor effect */
+.blink {
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    from, to { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* Terminal text effects */
+.typewriter {
+    overflow: hidden;
+    border-right: .15em solid #F66A0A;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: 
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #F66A0A; }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0d1117;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #F66A0A;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #d45a08;
+}
